@@ -1,38 +1,12 @@
-# create-svelte
+## How to run
+1. Make sure you have a recent version of `node` installed.
+2. Download this repository and open a terminal window at the location of the repo.
+3. Run `npm install`.
+4. Run `npm run dev`.
+5. If that doesn't work, make sure that (on Mac) you also have Homebrew installed.
+6. Email liyajin@college.harvard.edu with any questions!
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Important differences
+Like React, Svelte is a Javascript framework, but a huge difference between this prototype and others is that our Svelte app combines all of the code that'd usually go into separate HTML, CSS, and JavaScript files into a single .svelte file. This is because Svelte also compiles its code at build time in contrast to React, Vue, or other Javascript frameworks: this makes Svelte apps incredibly reactive and fast.
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Unlike all but one of our other to-do apps, this version includes a backend, Firebase. We've used a backend before (MongoDB), but Firebase is built to be more user-friendly for non-technical programmers. One huge advantage of Firebase is its extensively-detailed documentation: it certainly sped up the app-building process. It also made it easier to import a variety of different modules that simplified our Svelte script greatly.
